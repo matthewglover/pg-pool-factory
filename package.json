@@ -1,0 +1,35 @@
+{
+  "name": "pg-pool-factory",
+  "version": "1.0.0",
+  "description": "## What A lighweight wrapper around node's pg module to make it easier to make pg pool connections.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewglover/pg-pool-factory.git"
+  },
+  "author": "Matt Glover (https://github.com/matthewglover)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewglover/pg-pool-factory/issues"
+  },
+  "homepage": "https://github.com/matthewglover/pg-pool-factory#readme",
+  "devDependencies": {
+    "commitizen": "^2.8.2",
+    "cz-conventional-changelog": "^1.1.6",
+    "ghooks": "^1.3.2",
+    "validate-commit-msg": "^2.6.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "eslint src/js/**",
+      "commit-msg": "validate-commit-msg"
+    }
+  }
+}

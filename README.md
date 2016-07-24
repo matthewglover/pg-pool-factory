@@ -9,4 +9,4 @@ Pool connections make it easier to connect to postgres databases, as they manage
 The problem with Pool connections is that they require a configuration object, and don't natively support use of a connection url, in the form provided by cloud postgres services.
 
 ## How
-pg-pool-factory fills this gap by providing a lightweight wrapper that extracts arguments from a postgres connection url and combining them with other optional properties, before creating and returning an instance of pg.Pool.
+pg-pool-factory fills this gap by providing a lightweight wrapper that extracts arguments from a postgres connection url and combines them with other optional object properties, before creating and returning an instance of pg.Pool.
